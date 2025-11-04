@@ -59,3 +59,69 @@ A: Yes, it is natively supported.
 
 Q7: Can I convert GPKG back to GDB?
 A: A Python utility is planned for this.
+
+---------------------------------------Romana---------------------------------
+
+README_RO: Utilitar Conversie MDB în GPKG
+=========================================
+
+Acest utilitar permite conversia fișierelor ESRI Personal Geodatabase (*.mdb) în format GeoPackage (*.gpkg), compatibil cu ArcGIS Pro.
+
+Ghid Pas cu Pas
+---------------
+1. Copiați arhiva local pe laptop.
+2. Dezarhivați conținutul într-un folder dedicat.
+3. Rulați fișierul executabil (nu necesită instalare sau drepturi de administrator).
+
+Selectarea fișierului MDB:
+- Apăsați „Browse MDB” și selectați fișierul .mdb dorit.
+
+Alegerea fișierului GPKG de ieșire:
+- Apăsați „Browse GPKG” și specificați locația și numele fișierului de ieșire.
+
+Încărcarea și selectarea straturilor:
+- Apăsați „Load Layers” pentru a scana fișierul MDB.
+- Bifați straturile pe care doriți să le convertiți.
+- Opțional: activați filtrul pentru a exclude straturile care încep cu „T_1_”.
+
+Setări opționale:
+- Cod EPSG: introduceți un cod pentru reproiectarea datelor.
+- Where Clause: filtrați înregistrările folosind sintaxă SQL.
+- Overwrite: bifați pentru a suprascrie un fișier GPKG existent.
+
+Conversia:
+- Apăsați „Convert”.
+- Monitorizați progresul și jurnalul.
+- La final, va apărea un mesaj de confirmare.
+
+Cerințe de Sistem
+-----------------
+- Sistem de operare: Windows 10 sau mai nou (64-bit)
+- .NET Framework: Versiunea 4.7.2 sau mai mare
+- RAM: Minim 4 GB (recomandat 8 GB)
+- Spațiu pe disc: Minim 500 MB liber
+- GDAL Runtime: Inclus în aplicație (trebuie să suporte driverul PGeo)
+- Driver ODBC Microsoft Access: Necesare pentru suport MDB
+
+Întrebări Frecvente (FAQ)
+--------------------------
+Î: Am nevoie de drepturi de administrator?
+R: Nu, aplicația rulează fără instalare.
+
+Î: Fișierul MDB nu se încarcă?
+R: Verificați dacă fișierul există și dacă GDAL include suport pentru PGeo.
+
+Î: Pot converti mai multe straturi simultan?
+R: Da, selectați mai multe straturi înainte de conversie.
+
+Î: Ce se întâmplă dacă nu introduc un cod EPSG?
+R: Datele vor fi exportate în sistemul de coordonate original.
+
+Î: De ce lipsesc descrierile în tabelele de ieșire?
+R: GeoPackage nu suportă domenii de valori codificate ca MDB.
+
+Î: Pot folosi fișierul GPKG în ArcGIS Pro?
+R: Da, este suportat nativ.
+
+Î: Pot converti GPKG înapoi în GDB?
+R: Este planificat un utilitar Python pentru conversie directă în GDB standard OMVP.
