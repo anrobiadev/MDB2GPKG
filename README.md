@@ -59,6 +59,3 @@ A: Yes, it is natively supported.
 
 Q7: Can I convert GPKG back to GDB?
 A: A Python utility is planned for this.
-
-Q8: Who do I contact for help?
-A: Email electroschite@gmail.com (copied to clipboard if email client fails).
