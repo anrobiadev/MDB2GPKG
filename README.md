@@ -5,7 +5,8 @@ Step-by-Step Guide
 
 1. Copy the archive locally to your laptop.
 2. Extract the contents into a dedicated folder.
-3. Run the executable file (no installation or admin rights required).
+3. Extract the content of the GDAL archive into the folder above.
+4. Run the executable file (no installation or admin rights required).
 
 Select the MDB File:
 - Click "Browse MDB" and choose your .mdb file.
